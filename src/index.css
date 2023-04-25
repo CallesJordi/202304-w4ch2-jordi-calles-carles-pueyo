@@ -7,3 +7,66 @@
 html {
   font-family: sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #0b3d91;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  width: 300px;
+  background-color: #1f2935;
+  border: 2px solid #feda4a;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+}
+
+.card__title {
+  font-size: 24px;
+  color: #feda4a;
+  margin-bottom: 15px;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card__info .card__info-item {
+  font-size: 14px;
+  color: #ffffff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.card__info .card__info-item:last-child {
+  margin-bottom: 0;
+}
