@@ -8,9 +8,9 @@ describe("Given an App component", () => {
 
       render(<App />);
 
-      const text = screen.getByText(expectedText);
+      const text = screen.getByRole("heading");
 
-      expect(text).toBeInTheDocument();
+      expect(text).toHaveTextContent(expectedText);
     });
   });
 });
