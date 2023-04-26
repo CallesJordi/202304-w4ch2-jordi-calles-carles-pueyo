@@ -9,7 +9,7 @@ const App = (): JSX.Element => {
 
   useEffect(() => {
     (async () => {
-      const response = await fetch(`${apiUrl}charaters`);
+      const response = await fetch(`${apiUrl}characters`);
       const charactersApi = (await response.json()) as CharacterStructure[];
       loadCharacters(charactersApi);
     })();
