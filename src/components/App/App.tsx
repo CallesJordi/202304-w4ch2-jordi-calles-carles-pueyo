@@ -2,14 +2,14 @@ import { useEffect, useState } from "react";
 import { type CharacterStructure } from "../types";
 import Character from "../Character/Character";
 
-const apiUrl = "http://localhost:4000/characters";
+const apiUrl = import.meta.env.VITE_API_URL;
 
 const App = (): JSX.Element => {
   const [characters, setCharacters] = useState<CharacterStructure[]>([]);
 
   useEffect(() => {
     (async () => {
-      const response = await fetch(apiUrl);
+      const response = await fetch(`${apiUrl}charaters`);
       const charactersApi = (await response.json()) as CharacterStructure[];
       loadCharacters(charactersApi);
     })();
