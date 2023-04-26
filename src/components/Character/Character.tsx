@@ -10,7 +10,7 @@ const Character = ({
   return (
     <>
       <div className="card">
-        <h1 className="card__title">{name}</h1>
+        <h3 className="card__title">{name}</h3>
         <img
           className="card__image"
           src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`}

@@ -29,10 +29,43 @@ h2 {
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0b3d91;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.main-header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.main-header__title {
+  font-size: 3rem;
+  color: #feda4a;
+}
+
+.main-header__subtitle {
+  font-size: 2rem;
+  padding: 10px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff, 0 0 10px #043031, 0 0 10px #00ccff,
+    0 0 10px #00ccff, 0 0 19px #00ccff;
+}
+
+.main {
+  padding: 20px;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .card {
@@ -41,27 +74,22 @@ body {
   border: 2px solid #feda4a;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
   text-align: center;
   padding: 15px;
 }
 
 .card__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #feda4a;
-  margin-bottom: 15px;
 }
 
 .card__image {
-  width: 100%;
-  height: auto;
-  max-height: 200px;
-  object-fit: cover;
+  height: 280px;
   margin-bottom: 15px;
 }
 
 .card__info .card__info-item {
-  font-size: 14px;
+  font-size: 0.85rem;
   color: #ffffff;
   display: block;
   margin-bottom: 5px;
