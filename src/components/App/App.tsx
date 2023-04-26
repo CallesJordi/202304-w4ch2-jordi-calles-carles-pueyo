@@ -22,7 +22,8 @@ const App = (): JSX.Element => {
   return (
     <div className="container">
       <header className="main-header">
-        <h1 className="main-title">Star Wars</h1>
+        <h1 className="main-header__title">Star Wars</h1>
+        <h2 className="main-header__subtitle">May the code be with you</h2>
       </header>
       <main className="main">
         <ul className="characters">
